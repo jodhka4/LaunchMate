@@ -9,10 +9,17 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
+    override func viewWillAppear(animated: Bool) {
+        // fetch the launch data
+        LaunchDataFetcher.fetchLaunchList(LaunchDataFetcher.NEXT_TEN_LAUNCHES_URL)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        if LaunchDataFetcher.tenLaunchesData == nil{
+            // TODO: Show error alert when launch data is nil
+        }
     }
 
     override func didReceiveMemoryWarning() {

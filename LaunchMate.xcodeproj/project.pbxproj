@@ -7,13 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BE6AD4831C59D30600C3A67A /* LaunchListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE6AD4821C59D30600C3A67A /* LaunchListTableViewController.swift */; };
 		BE9982C91C589B0D009F82E4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE9982C81C589B0D009F82E4 /* AppDelegate.swift */; };
-		BE9982CB1C589B0D009F82E4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE9982CA1C589B0D009F82E4 /* ViewController.swift */; };
 		BE9982CE1C589B0D009F82E4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE9982CC1C589B0D009F82E4 /* Main.storyboard */; };
 		BE9982D01C589B0D009F82E4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE9982CF1C589B0D009F82E4 /* Assets.xcassets */; };
 		BE9982D31C589B0D009F82E4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE9982D11C589B0D009F82E4 /* LaunchScreen.storyboard */; };
 		BE9982DE1C589B0D009F82E4 /* LaunchMateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE9982DD1C589B0D009F82E4 /* LaunchMateTests.swift */; };
 		BE9982E91C589B0D009F82E4 /* LaunchMateUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE9982E81C589B0D009F82E4 /* LaunchMateUITests.swift */; };
+		BE9982F71C589BD2009F82E4 /* LaunchDataFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE9982F61C589BD2009F82E4 /* LaunchDataFetcher.swift */; };
+		BECC4D391C5AA690007ABBAC /* LaunchListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BECC4D381C5AA690007ABBAC /* LaunchListTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,9 +36,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		BE6AD4821C59D30600C3A67A /* LaunchListTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaunchListTableViewController.swift; sourceTree = "<group>"; };
 		BE9982C51C589B0D009F82E4 /* LaunchMate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LaunchMate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE9982C81C589B0D009F82E4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		BE9982CA1C589B0D009F82E4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		BE9982CD1C589B0D009F82E4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BE9982CF1C589B0D009F82E4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BE9982D21C589B0D009F82E4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +49,8 @@
 		BE9982E41C589B0D009F82E4 /* LaunchMateUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LaunchMateUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE9982E81C589B0D009F82E4 /* LaunchMateUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchMateUITests.swift; sourceTree = "<group>"; };
 		BE9982EA1C589B0D009F82E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BE9982F61C589BD2009F82E4 /* LaunchDataFetcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaunchDataFetcher.swift; sourceTree = "<group>"; };
+		BECC4D381C5AA690007ABBAC /* LaunchListTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaunchListTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +81,7 @@
 		BE9982BC1C589B0D009F82E4 = {
 			isa = PBXGroup;
 			children = (
+				BECC4D381C5AA690007ABBAC /* LaunchListTableViewCell.swift */,
 				BE9982C71C589B0D009F82E4 /* LaunchMate */,
 				BE9982DC1C589B0D009F82E4 /* LaunchMateTests */,
 				BE9982E71C589B0D009F82E4 /* LaunchMateUITests */,
@@ -98,8 +103,9 @@
 			isa = PBXGroup;
 			children = (
 				BE9982C81C589B0D009F82E4 /* AppDelegate.swift */,
-				BE9982CA1C589B0D009F82E4 /* ViewController.swift */,
 				BE9982CC1C589B0D009F82E4 /* Main.storyboard */,
+				BE6AD4821C59D30600C3A67A /* LaunchListTableViewController.swift */,
+				BE9982F61C589BD2009F82E4 /* LaunchDataFetcher.swift */,
 				BE9982CF1C589B0D009F82E4 /* Assets.xcassets */,
 				BE9982D11C589B0D009F82E4 /* LaunchScreen.storyboard */,
 				BE9982D41C589B0D009F82E4 /* Info.plist */,
@@ -256,7 +262,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BE9982CB1C589B0D009F82E4 /* ViewController.swift in Sources */,
+				BE6AD4831C59D30600C3A67A /* LaunchListTableViewController.swift in Sources */,
+				BE9982F71C589BD2009F82E4 /* LaunchDataFetcher.swift in Sources */,
+				BECC4D391C5AA690007ABBAC /* LaunchListTableViewCell.swift in Sources */,
 				BE9982C91C589B0D009F82E4 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -482,6 +490,7 @@
 				BE9982EF1C589B0D009F82E4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BE9982F01C589B0D009F82E4 /* Build configuration list for PBXNativeTarget "LaunchMateTests" */ = {
 			isa = XCConfigurationList;
@@ -490,6 +499,7 @@
 				BE9982F21C589B0D009F82E4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BE9982F31C589B0D009F82E4 /* Build configuration list for PBXNativeTarget "LaunchMateUITests" */ = {
 			isa = XCConfigurationList;
@@ -498,6 +508,7 @@
 				BE9982F51C589B0D009F82E4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
